@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.main-wrap{
+    height:100vh;
+    width:100%;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal-box{
+    height:300px;
+    width:550px;
+    background-color: #fff;
+    padding: 10px;
+}
+.cal-display{
+    height:60px;
+    width:100%;
+    background-color: rgb(248, 248, 248);
+    padding:5px 10px;
+}
+.cal-display input{
+    height: 50px;
+    padding:0px 4px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    font-size: 24px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.cal-display .num-input{
+    width:48%;
+}
+.cal-display .main-operand{
+    width:15%;
+}
+.cal-display input::placeholder{
+    color: rgb(226, 225, 225);
+}
+.cal-button{
+    width:100%;
+    margin: 14px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-button .cal-number{
+    width:50%;
+    height: 200px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    /* border: 1px solid rgb(231, 231, 231); */
+}
+.cal-number .num-pad, .cal-operation .num-pad{
+    height:60px;
+    width:60px;
+    border: none;
+    outline:none;
+    border-radius: 4px;
+    margin: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+.numpad-bg{
+    background-color: rgb(78, 144, 199);
+}
+.cal-number .numpad-bg:hover{
+    background-color: rgb(20, 129, 180);
+}
+.cal-number .operands-bg{
+    background-color: rgb(54, 179, 116);
+}
+.cal-number .operands-bg:hover{
+    background-color: rgb(35, 143, 89);
+}
+.clear{
+    background-color: rgb(230, 14, 14);
+    width:140px !important;
+}
+.cal-button .cal-output{
+    width: 50%;
+    height:200px;
+    background-color: #fff;
+    padding: 10px;
+    background-color: aliceblue;
+}
+#show-output{
+    padding: 5px;
+    color:rgb(143, 142, 142);
+}

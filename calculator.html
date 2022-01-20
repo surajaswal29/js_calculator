@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="main-wrap">
+        <div class="cal-box">
+            <div class="cal-display">
+                <input type="number" id="first_num" class="num-input" placeholder="Number 1">
+                <input type="number" id="second_num" class="num-input" placeholder="Number 2">
+            </div>
+            <div class="cal-button">
+                <div class="cal-number">
+                    <button class="num-pad operands-bg" id="addition">+</button>
+                    <button class="num-pad operands-bg" id="subtraction">-</button>
+                    <button class="num-pad operands-bg" id="multiplication">x</button>
+                    <!-- <button class="num-pad operands-bg" id="equal" type="button">=</button> -->
+                    <button class="num-pad operands-bg" id="division">/</button>
+                    <button class="num-pad clear" id="clear">Clear</button>
+                </div>
+                <div class="cal-output">
+                    <h2 id="show-output">Your calculation will be displayed here</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
